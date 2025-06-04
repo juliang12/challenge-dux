@@ -25,8 +25,6 @@ export async function addUser({
       sector,
     };
 
-    console.log(data, "data nueva");
-
     const parsed = userSchema.safeParse(data);
 
     if (!parsed.success) {
@@ -37,17 +35,13 @@ export async function addUser({
       };
     }
 
-    // parsed.data tiene los datos validados y tipados
-    console.log("📦 Datos validados:", parsed.data);
-
-    // Aquí iría la lógica para guardar el usuario en la base de datos, etc.
     await addUserData({
       id: parsed.data.id,
       usuario: parsed.data.usuario,
       estado: parsed.data.estado,
       sector: parsed.data.sector,
     });
-    console.log(parsed.data);
+
     revalidatePath("/");
     return {
       success: true,

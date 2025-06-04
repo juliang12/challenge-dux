@@ -17,8 +17,6 @@ export async function updateUser(
       sector: sector.toString(),
     };
 
-    console.log(data, "data");
-
     const parsed = userSchema.safeParse(data);
 
     if (!parsed.success) {
@@ -27,7 +25,6 @@ export async function updateUser(
         error: parsed.error.errors[0].message,
       };
     }
-
 
     await updateUserData(parsed.data);
 
