@@ -26,7 +26,7 @@ export default async function Home({ searchParams }: Props) {
       <div className="w-full mt-3">
         <Filters />
       </div>
-      <div className="pt-4">
+      <div className="pt-4 w-full">
         <Suspense key={query + page} fallback={<InvoiceTableSkeleton />}>
           <UsersTable searchParams={searchParamsString} />
         </Suspense>
