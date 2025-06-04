@@ -8,7 +8,7 @@
 1. Clonar el repositorio.
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone https://github.com/juliang12/challenge-dux.git
 cd tu-repo
 ```
 2. Crear variables de entorno .env y .env.local 
