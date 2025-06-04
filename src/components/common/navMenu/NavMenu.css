@@ -1,0 +1,16 @@
+/* En tu archivo CSS global o en el componente */
+.p-menubar {
+    background: #0763E7;
+    border: none;
+    border-radius: 0;
+}
+.p-menubar .p-menuitem-link {
+    color: #fff;
+}
+.p-menubar .p-menuitem-link:hover {
+    background: #0763E7;
+}
+
+.p-menubar-button {
+  display: none !important;
+}

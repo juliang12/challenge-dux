@@ -1,0 +1,21 @@
+:root {
+  --font-xs: 14px;
+  --font-md: 17.5px;
+  --font-lg: 25px;
+
+  --space-sm: 14px;
+  --space-md: 17.5px;
+  --space-lg: 25px;
+  --space-xl: 47.5px;
+
+  --gap-sm: 14px;
+  --gap-md: 17.5px;
+  --gap-lg: 20px;
+
+  --border-radius: 6px;
+
+  /* Colores */
+  --color-bg-header: #F9FAFB;
+  --color-border: #E5E7EB;
+  --color-icon: #6B7280;
+}
