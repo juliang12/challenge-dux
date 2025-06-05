@@ -11,10 +11,10 @@
 git clone https://github.com/juliang12/challenge-dux.git
 cd tu-repo
 ```
-2. Crear variables de entorno .env y .env.local 
+2. Crear variable de entorno .env
 ```bash
-NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/api
-API_URL=tu_clave_secreta
+NEXT_PUBLIC_API_BASE_URL=url-endpoint
+API_URL=url-endpoint
 ```
 
 3. Instalar dependencias 
