@@ -13,8 +13,8 @@ cd tu-repo
 ```
 2. Crear variable de entorno .env
 ```bash
-NEXT_PUBLIC_API_BASE_URL=url-endpoint
-API_URL=url-endpoint
+NEXT_PUBLIC_API_BASE_URL=https://api.ejemplo.com/api-test
+API_URL=https://api.ejemplo.com/api-test
 ```
 
 3. Instalar dependencias 
