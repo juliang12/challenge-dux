@@ -1,13 +1,13 @@
 "use client";
+import { useRef } from "react";
 import { useUserContext } from "@/context/UserContext";
 import { useUserModal } from "@/context/UserModalContext";
 import { useUserTablePagination } from "@/hooks/useUserTablePagination";
 import { Toast } from "primereact/toast";
 import { ConfirmDialog } from "primereact/confirmdialog";
 import UserModal from "../modal/user-modal";
-import { useRef } from "react";
-import UsersTable from "./UsersTable";
 import { getUserTableColumns } from "./constants/userTableColumns";
+import UsersTableClient from "./UsersTableClient";
 
 const UserTableContainer = () => {
   const { users, totalCount } = useUserContext();
@@ -19,7 +19,7 @@ const UserTableContainer = () => {
 
   return (
     <div className="card">
-      <UsersTable
+      <UsersTableClient
         users={users}
         totalCount={totalCount}
         first={first}

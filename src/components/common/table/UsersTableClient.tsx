@@ -13,7 +13,7 @@ interface Props {
   loading?: boolean;
 }
 
-const UsersTable = ({
+const UsersTableClient = ({
   users,
   totalCount,
   first,
@@ -42,4 +42,4 @@ const UsersTable = ({
   );
 };
 
-export default UsersTable;
+export default UsersTableClient;
