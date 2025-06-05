@@ -94,7 +94,7 @@ const UserForm = ({ onClose, userToEdit, toastRef }: UserFormProps) => {
             className="p-button-primary font-semibold w-fit border-round-md text-sm"
           />
           <Button
-          type="button"
+            type="button"
             label="Cancelar"
             icon="pi pi-check custom-icon-size"
             className="p-button-outlined font-semibold w-fit border-round-md text-sm"
