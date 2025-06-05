@@ -1,8 +1,8 @@
 "use client";
 
 import { UserProvider } from "@/context/UserContext";
-import Table from "../table/Table";
 import { User } from "@/interfaces/users.interfaces";
+import UserTableContainer from "../table/UsersTableContainer";
 
 type Props = {
   users: User[];
@@ -12,7 +12,7 @@ type Props = {
 export default function UserProviderWrapper({ users, totalCount }: Props) {
   return (
     <UserProvider users={users} totalCount={totalCount}>
-      <Table />
+      <UserTableContainer />
     </UserProvider>
   );
 }

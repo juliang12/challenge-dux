@@ -6,7 +6,6 @@ import { useRef } from "react";
 
 interface User {
   id: number;
-  // otros campos si los necesitás
 }
 
 export const ActionBodyTemplate = (rowData: User) => {
